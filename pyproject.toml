@@ -1,0 +1,32 @@
+[project]
+name = "smart-product-pricing"
+version = "1.0.0"
+description = "Production-grade Multimodal Price Prediction Engine combining Tri-Modal Cross-Attention GMU Neural Networks and Tabular LightGBM"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    {name = "Mohammed Umar F", email = "mdumr4@gmail.com"},
+    {name = "Soujanya K Hegde"},
+    {name = "Soha Rida Khan"},
+    {name = "Akshay Shanbhag"}
+]
+license = {text = "MIT"}
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "lightgbm>=4.0.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.2.0",
+    "pillow>=9.5.0",
+    "pyarrow>=12.0.0",
+    "joblib>=1.2.0",
+    "tqdm>=4.65.0",
+    "pytest>=7.3.0",
+    "requests>=2.31.0"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
