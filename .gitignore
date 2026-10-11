@@ -1,0 +1,40 @@
+# Environments & Virtual Environments
+.venv/
+.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Heavy Datasets (Large CSVs synced via sync_assets.py)
+data/*.csv
+!data/sample_products.csv
+data/*.parquet
+data/images/
+*.zip
+
+# Model Checkpoints & Precomputed Weights (Synced via sync_assets.py)
+models/
+*.pth
+*.pt
+*.bin
+*.pkl
+lightgbm_model.pkl
+best.pth
+unit_label_encoder.pkl
+unit_vocab.json
+tabular_stats.json
+
+# Generated Predictions & Output Logs
+output/
+test_out*.csv
+*.log
+
+# IDE & OS Specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.agents/
+.gemini/
